@@ -1,3 +1,3 @@
-# oscarkwan.net
+# www.oscarkwan.net
 
-# Personal portfolio website
+Personal portfolio website
