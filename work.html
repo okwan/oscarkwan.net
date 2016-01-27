@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" href="./dist/css/animsition.min.css">
 
@@ -33,9 +34,10 @@
 		  $(".animsition").animsition({
 		    inClass: 'fade-in',
 		    outClass: 'fade-out',
-		    inDuration: 1000,
-		    outDuration: 500,
+		    inDuration: 1500,
+		    outDuration: 800,
 		    linkElement: '.animsition-link',
+		    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
 		    loading: true,
 		    loadingParentElement: 'body', //animsition wrapper element
 		    loadingClass: 'animsition-loading',
@@ -44,6 +46,8 @@
 		    timeoutCountdown: 5000,
 		    onLoadEvent: true,
 		    browser: [ 'animation-duration', '-webkit-animation-duration'],
+		    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
 		    overlay : false,
 		    overlayClass : 'animsition-overlay-slide',
 		    overlayParentElement : 'body',
@@ -58,9 +62,8 @@
 	  		data-animsition-in-duration="1000"
 	  		data-animsition-out-class="fade-out"
 	  		data-animsition-out-duration="800">
-			<header class="ok-header">
-				<h1>- ABOUT</h1>
-				<p>Me much cool.</p>
+			<header class="ok-header"  style="margin-top: -150px">
+				<h1>- WORK</h1>
 			</header>
 			<nav id="bt-menu" class="bt-menu">
 				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -79,6 +82,52 @@
 					<li><a href="https://github.com/okwan" class="bt-icon icon-github">icon-github</a></li>
 				</ul>-->
 			</nav>
+			<div class = "content">
+				<div class="grid">
+					<figure class="effect-roxy">
+						<img src="./img/hushio_digivault_mockup.jpg" alt=""/>
+						<figcaption>
+							<div>
+								<h2 style="color:white; font-family: 'Open Sans', sans-serif;">HUSHIO</h2>
+								<p>Android application built for an industry project.</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-roxy">
+						<img src="./img/hushio_digivault_mockup.jpg" alt="img1"/>
+						<figcaption>
+							<div>
+								<h2 style="color:white; font-family: 'Open Sans', sans-serif;">Timewhale</h2>
+								<p>Mobile web application that helps you manage your time.</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="effect-roxy">
+						<img src="./img/hushio_digivault_mockup.jpg" alt=""/>
+						<figcaption>
+							<div>
+								<h2 style="color:white; font-family: 'Open Sans', sans-serif;">Wireless Protocol</h2>
+								<p>A windows application that allows two devices to send files.</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-roxy" style="margin-bottom: 150px">
+						<img src="./img/hushio_digivault_mockup.jpg" alt="img1"/>
+						<figcaption>
+							<div>
+								<h2 style="color:white; font-family: 'Open Sans', sans-serif;">GPSD</h2>
+								<p>Website for stuff.</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+			</div>
 		</div><!-- /container -->
 	</body>
 	<script src="js/classie.js"></script>
